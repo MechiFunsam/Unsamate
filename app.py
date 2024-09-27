@@ -4,17 +4,17 @@ import streamlit as st
 import os  
 
 # Configuración de la página  
-st.set_page_config(page_title="Plataforma de Apuntes Universitarios", layout="wide")  
+st.set_page_config(page_title="Comunsam", layout="wide")  
 
 # Título de la aplicación  
-st.title("Plataforma de repositorio de Comunicación EH")  
+st.title("PRepositorio de Comunicación, Unsam")  
 
 # Crear el directorio 'uploads' si no existe  
 if not os.path.exists("uploads"):  
     os.makedirs("uploads")  
 
 # Subir archivos  
-uploaded_file = st.file_uploader("Sube tus archivos aquí", type=["pdf", "docx", "txt"])  
+uploaded_file = st.file_uploader("Sumá tus archivos aquí", type=["pdf", "docx", "txt"])  
 
 if uploaded_file is not None:  
     # Guardar el archivo en el directorio 'uploads'  
@@ -24,7 +24,7 @@ if uploaded_file is not None:
     st.success(f"Archivo {uploaded_file.name} subido exitosamente")  
 
 # Mostrar archivos subidos  
-st.header("Archivos Subidos")  
+st.header("Apuntes Comunsam")  
 files = os.listdir("uploads")  
 if files:  
     for file in files:  
