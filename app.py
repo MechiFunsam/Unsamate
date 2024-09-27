@@ -7,7 +7,7 @@ import os
 st.set_page_config(page_title="Comunsam", layout="wide")  
 
 # Título de la aplicación  
-st.title("PRepositorio de Comunicación, Unsam")  
+st.title("Repositorio de Comunicación, Unsam")  
 
 # Crear el directorio 'uploads' si no existe  
 if not os.path.exists("uploads"):  
