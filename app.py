@@ -7,7 +7,7 @@ import os
 st.set_page_config(page_title="Plataforma de Apuntes Universitarios", layout="wide")  
 
 # Título de la aplicación  
-st.title("Plataforma de Apuntes Universitarios")  
+st.title("Plataforma de repositorio de Comunicación EH")  
 
 # Crear el directorio 'uploads' si no existe  
 if not os.path.exists("uploads"):  
